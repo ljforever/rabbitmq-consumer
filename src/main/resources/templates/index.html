@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="/js/jquery-easyui-1.8.6/jquery.min.js"></script>
+<body>
+<div id="myDiv"><h2>是否启动</h2></div>
+<button id="start" type="button">启动循环</button>
+</body>
+
+<script>
+    $("#start").click(function(){
+        htmlobj=$.ajax({url:"/test",async:true});
+        console.log(htmlobj);
+        // alert('服务启动，可以关闭此页');
+    });
+
+</script>
+</html>

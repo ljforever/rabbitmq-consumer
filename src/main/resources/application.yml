@@ -1,0 +1,21 @@
+server:
+  port: 18080
+spring:
+  #给项目来个名字
+  application:
+    name: rabbitmq-cosumer
+  #配置rabbitMq 服务器
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    #虚拟host 可以不设置,使用server默认host
+    #virtual-host: JCcccHost
+  thymeleaf:
+    #      enabled: true  #开启thymeleaf视图解析
+    encoding: utf-8  #编码
+    prefix: classpath:/templates #前缀
+    cache: false  #是否使用缓存
+    mode: LEGACYHTML5  #非严格的HTML语法模式
+    suffix: .html  #后缀名
